@@ -2,7 +2,6 @@
 
 #include <cstdint>
 
-
 namespace Bitmap
 {
     struct BmpFileHeader
@@ -27,6 +26,14 @@ namespace Bitmap
         int32_t yPixelsPerMeter;
         int32_t totalColors;
         int32_t importantColors;
+    };
+
+    struct BmpColorTable
+    {
+        unsigned char red;
+        unsigned char green;
+        unsigned char blue;
+        unsigned char reserved;
     };
     
 } // namespace Bitmap
